@@ -41,29 +41,27 @@ Add your database configuration (see application.properties file) --> On line sp
    ./mvnw spring-boot:run
 
 ## API Endpoints
-
-GET /api/trades - Retrieve all trades
-GET /api/trades/{id} - Retrieve a specific trade
-POST /api/trades - Create a new trade
-PUT /api/trades/{id} - Update an existing trade
-DELETE /api/trades/{id} - Delete a trade
+- `GET /trades` - Retrieve all trades
+- `GET /trades/{id}` - Retrieve a specific trade 
+- `POST /trades` - Create a new trade
+- `PUT /trades/{id}` - Update an existing trade
+- `DELETE /trades/{id}` - Delete a trade
 
 ## Project Structure
 src/
-└── main/
-├── java/com/arinososanya/trade_api/
-│   ├── controller/
-│   │   └── TradeController.java
-│   ├── model/
-│   │   └── Trade.java
-│   ├── repository/
-│   │   └── TradeRepository.java
-│   ├── service/
-│   │   └── TradeService.java
-│   └── TradeApiApplication.java
-└── resources/
-└── application.properties
-
+  ├── main/
+  │   ├── java/com/arinososanya/trade_api/
+  │   │   ├── controller/
+  │   │   │   └── TradeController.java
+  │   │   ├── model/
+  │   │   │   └── Trade.java
+  │   │   ├── repository/
+  │   │   │   └── TradeRepository.java
+  │   │   ├── service/
+  │   │   │   └── TradeService.java
+  │   │   └── TradeApiApplication.java
+  │   └── resources/
+  │       └── application.properties
 
 
     This project is licensed under the MIT License - see the LICENSE file for details.
