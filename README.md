@@ -14,7 +14,7 @@ A RESTful API service built with Spring Boot that manages trading operations. Th
 ## Technologies Used
 
 - Java 21
-- Spring Boot 3.2.3
+- Spring Boot 3.2.2
 - Spring Data JPA
 - MySQL
 - Maven
