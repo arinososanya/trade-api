@@ -48,20 +48,8 @@ Add your database configuration (see application.properties file) --> On line sp
 - `DELETE /trades/{id}` - Delete a trade
 
 ## Project Structure
-src/
-  ├── main/
-  │   ├── java/com/arinososanya/trade_api/
-  │   │   ├── controller/
-  │   │   │   └── TradeController.java
-  │   │   ├── model/
-  │   │   │   └── Trade.java
-  │   │   ├── repository/
-  │   │   │   └── TradeRepository.java
-  │   │   ├── service/
-  │   │   │   └── TradeService.java
-  │   │   └── TradeApiApplication.java
-  │   └── resources/
-  │       └── application.properties
+![My folder structure prplebg](https://github.com/user-attachments/assets/4e1d62a8-9c65-4038-92d8-7caae46a0643)
+
 
 
     This project is licensed under the MIT License - see the LICENSE file for details.
