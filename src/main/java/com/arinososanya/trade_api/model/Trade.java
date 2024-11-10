@@ -9,7 +9,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "trades")
-@Data
+@Data // This annotation automatically creates all getters and setters
 
 public class Trade {
     @Id
@@ -21,4 +21,5 @@ public class Trade {
     private BigDecimal price;
     private String tradeType;
     private LocalDateTime timestamp;
+
 }
