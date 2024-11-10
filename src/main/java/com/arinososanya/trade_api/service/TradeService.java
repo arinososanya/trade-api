@@ -11,7 +11,7 @@ import java.util.UUID;
 
 
 // This is where I add business functionalities / logic
-// What my Trade API Does:
+// What my Trade API Does (CRUD Methods):
 // Get all trades
 // Get one trade
 // Create trade
@@ -55,5 +55,11 @@ public class TradeService {
     }
 
     // Delete a trade
+    public void deleteTrade(UUID id){
+        // First check if trade exists
+        Trade trade = getTrade(id);
+        // If trade exists, delete it
+        tradeRepository.deleteById(id);
+    }
 
 }
