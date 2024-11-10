@@ -1,31 +1,25 @@
 # Trade-API
-
-A RESTful API service built with Spring Boot that manages trading operations. This project allows users to create, read, update, and delete trade records, with filtering capabilities for specific trading scenarios.
+A RESTful API service built with Spring Boot that manages trading operations. This project allows users to create, read, update, and delete trade records.
 
 ## Features
-
 - Full CRUD operations for trade records
-- Data filtering using Spring Data JPA
-- Exception handling
 - MySQL database integration
-- Unit tests coverage
+- Swagger UI documentation
 - RESTful architecture
 
 ## Technologies Used
-
 - Java 21
 - Spring Boot 3.2.2
 - Spring Data JPA
 - MySQL
 - Maven
-- JUnit (for testing)
+- Swagger UI (OpenAPI)
 
 ## Prerequisites
-
 - JDK 21 or higher
 - Maven
 - MySQL
-- Git
+
 
 ## Setup Instructions
 
@@ -39,10 +33,11 @@ CREATE DATABASE trading_db;
 
 
 3. Configure database connection:
-Create src/main/resources/application.properties
-Add your database configuration
+Navigate to src/main/resources/application.properties
+Add your database configuration (see application.properties file) --> On line spring.datasource.password=YOUR_PASSWORD , replace "YOUR_PASSWORD" with your MySql password
 
-4. Run the application
+
+5. Run the application
    ./mvnw spring-boot:run
 
 ## API Endpoints
@@ -55,16 +50,20 @@ DELETE /api/trades/{id} - Delete a trade
 
 ## Project Structure
 src/
-├── main/
-│   ├── java/
-│   │   └── com/[Arin]/tradingapi/
-│   │       ├── controllers/
-│   │       ├── models/
-│   │       ├── repositories/
-│   │       └── services/
-│   └── resources/
-└── test/
-    └── java/
+└── main/
+├── java/com/arinososanya/trade_api/
+│   ├── controller/
+│   │   └── TradeController.java
+│   ├── model/
+│   │   └── Trade.java
+│   ├── repository/
+│   │   └── TradeRepository.java
+│   ├── service/
+│   │   └── TradeService.java
+│   └── TradeApiApplication.java
+└── resources/
+└── application.properties
+
 
 
     This project is licensed under the MIT License - see the LICENSE file for details.
