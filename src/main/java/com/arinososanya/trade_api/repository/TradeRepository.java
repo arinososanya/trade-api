@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
-// The repository handles raw data and basic database operations
+// The repository handles raw data and basic database operations. It essentially talks to my database
 
 @Repository // This annotation tells Spring that this is a component that handles data access
 public interface TradeRepository extends JpaRepository<Trade, UUID> {
